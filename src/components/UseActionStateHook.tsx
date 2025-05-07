@@ -30,7 +30,6 @@ function UseActionStateHook() {
   useEffect(() => {
     console.log('state:', state); // 输出 state 变化
     // 根据 state 的内容处理成功或错误提示
-
     if (state.error) {
       alert(state.error); // 显示错误信息
     } else if (state.message) {
